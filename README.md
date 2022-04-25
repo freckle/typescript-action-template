@@ -2,10 +2,12 @@
 
 Our custom template repository for GitHub Actions implemented in TypeScript.
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+[Creating a repository from a template][docs].
 
-**NOTE**: Before sure to look for strings like "TODO" or "Action name" and
-update them accordingly.
+[docs]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+
+**NOTE**: Be sure to look for strings like "TODO" or "Action name" and update
+them accordingly.
 
 ## Usage
 
