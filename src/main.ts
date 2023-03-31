@@ -2,10 +2,9 @@ import * as core from "@actions/core";
 
 async function run() {
   try {
-
-    core.startGroup("Inputs");
     const token = core.getInput("github-token", { required: true });
-    core.info("Action loaded")
+
+    // Your logic here
 
   } catch (error) {
     if (error instanceof Error) {
