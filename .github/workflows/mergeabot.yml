@@ -4,6 +4,9 @@ on:
   pull_request:
   schedule:
     - cron: "0 0 * * *"
+    
+permissions:
+  pull-requests: write # so we add comment from Dependabot
 
 jobs:
   mergeabot:
