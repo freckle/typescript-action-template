@@ -20,8 +20,7 @@ jobs:
   
   integration:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: none
+    permissions: {}
     steps:
       - uses: actions/checkout@v4
       - uses: ./
