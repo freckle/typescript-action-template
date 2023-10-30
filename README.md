@@ -19,6 +19,14 @@ them accordingly.
 
 See [action.yml](./action.yml) for a complete list of inputs and outputs.
 
+## Permissions
+
+This action requires the following permissions:
+
+```yaml
+permissions:
+```
+
 ## Versioning
 
 Versioned tags will exist, such as `v1.0.0` and `v2.1.1`. Branches will exist

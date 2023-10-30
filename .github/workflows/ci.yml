@@ -17,3 +17,11 @@ jobs:
       - run: yarn install
       - run: yarn build
       - run: yarn test --passWithNoTests
+  
+  integration:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: none
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
