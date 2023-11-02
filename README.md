@@ -19,6 +19,19 @@ them accordingly.
 
 See [action.yml](./action.yml) for a complete list of inputs and outputs.
 
+## Permissions
+
+This action requires the following permissions:
+
+```yaml
+permissions: {}
+```
+
+As the action uses the GitHub API, these should be updated to reflect the
+minimal permissions required. These permissions may need to be manually set in
+certain scenarios, such as workflows triggered by Dependabot PRs, which use a
+read-only `GITHUB_TOKEN`.
+
 ## Versioning
 
 Versioned tags will exist, such as `v1.0.0` and `v2.1.1`. Branches will exist
