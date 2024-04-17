@@ -678,10 +678,10 @@
   dependencies:
     "@octokit/types" "^12.6.0"
 
-"@octokit/plugin-rest-endpoint-methods@^12.2.2":
-  version "12.2.2"
-  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-12.2.2.tgz#e55b3f9e1b79e1ea4454179c911d73c8389aa43b"
-  integrity sha512-bSxxmYRuaICLfZ7SJaf71dC4Hq81BmOOof6QICS7/71cXKvjljPKsv7IDpUxAybJ5/PVrkSG4dFpHneyKAZfvw==
+"@octokit/plugin-rest-endpoint-methods@^13.0.1":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-13.0.1.tgz#6cda8503b57b43bc8f13b53bfc7881a75715cfba"
+  integrity sha512-TuIntHqaf2tbIhhPTLERaJKj6moauSHSksBKsgCAoT/vVlTceCosWmMlYUO/un4ftoYNWBYkntToOgJNlPMFmw==
   dependencies:
     "@octokit/types" "^13.4.0"
 
