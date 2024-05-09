@@ -5,7 +5,6 @@ async function run() {
     const token = core.getInput("github-token", { required: true });
 
     // Your logic here
-
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);
