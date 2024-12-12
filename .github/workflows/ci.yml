@@ -13,11 +13,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           cache: yarn
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - run: yarn install
       - run: yarn build
       - run: yarn test --passWithNoTests
-  
+
   integration:
     runs-on: ubuntu-latest
     permissions: {}
