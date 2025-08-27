@@ -3,7 +3,7 @@
 Our custom template repository for GitHub Actions implemented in TypeScript.
 
 [Creating a repository from a template][docs].
-(If you are working within Freckle, use github-vending-machine instead)
+(If you are working within Freckle, use [github-vending-machine](https://github.com/freckle/github-vending-machine) instead)
 
 [docs]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 
