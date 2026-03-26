@@ -1,13 +1,14 @@
 {
   "name": "action-name",
   "version": "0.0.0",
+  "type": "module",
   "description": "Action description",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc && ncc build lib/main.js --minify",
     "format": "prettier --write \"**/*.ts\"",
     "format-check": "prettier --check \"**/*.ts\"",
-    "test": "jest"
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "repository": {
     "type": "git",
