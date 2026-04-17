@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "outDir": "./lib",
+    "rootDir": "./src",
     "allowJs": true,
+    "ignoreDeprecations": "6.0",
     "target": "es5",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -16,7 +18,8 @@
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "strict": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "types": ["node"]
   },
   "include": ["./src/**/*"],
   "exclude": ["./src/**/*.test.ts"]
