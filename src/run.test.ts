@@ -1,6 +1,6 @@
 import * as core from "@actions/core";
 
-import { PullRequest, GitHub } from "./github-client.js";
+import { PullRequest } from "./github-client.js";
 import { run } from "./run.js";
 
 vi.mock(import("@actions/core"), () => {
@@ -10,7 +10,7 @@ vi.mock(import("@actions/core"), () => {
 });
 
 describe("run", () => {
-  it("logs the given context and inputs", async () => {
+  it("fetches the PR and logs details", async () => {
     const context = {
       eventName: "pull_request",
       owner: "freckle",
