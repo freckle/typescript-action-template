@@ -1,10 +1,15 @@
 import * as core from "@actions/core";
+import * as github from "@actions/github";
 
-async function run() {
+import { getContext } from "./context.js";
+import { getInputs } from "./inputs.js";
+import { run } from "./run.js";
+
+async function main() {
   try {
-    const token = core.getInput("github-token", { required: true });
-
-    // Your logic here
+    const context = getContext();
+    const inputs = getInputs();
+    run(context, inputs);
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);
@@ -16,4 +21,4 @@ async function run() {
   }
 }
 
-run();
+main();
