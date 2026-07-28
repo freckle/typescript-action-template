@@ -8,7 +8,8 @@
     "build": "tsc -p tsconfig.build.json && ncc build lib/main.js --minify",
     "format": "prettier --write \"**/*.ts\"",
     "format-check": "prettier --check \"**/*.ts\"",
-    "test": "vitest run"
+    "test": "vitest run",
+    "readme": "npx action-docs -u && prettier --write README.md"
   },
   "repository": {
     "type": "git",

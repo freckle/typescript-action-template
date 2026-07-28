@@ -16,9 +16,19 @@ them accordingly.
 - uses: freckle/TODO-action@v1
 ```
 
-## Inputs and Outputs
+<!-- action-docs-inputs action="action.yml" -->
 
-See [action.yml](./action.yml) for a complete list of inputs and outputs.
+## Inputs
+
+| name           | description                                | required | default               |
+| -------------- | ------------------------------------------ | -------- | --------------------- |
+| `github-token` | <p>Override GitHub token, if necessary</p> | `true`   | `${{ github.token }}` |
+
+<!-- action-docs-inputs action="action.yml" -->
+
+<!-- action-docs-outputs action="action.yml" -->
+
+<!-- action-docs-outputs action="action.yml" -->
 
 ## Permissions
 
