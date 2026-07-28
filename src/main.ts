@@ -3,14 +3,14 @@ import * as github from "@actions/github";
 
 import { getContext } from "./context.js";
 import { getInputs } from "./inputs.js";
-import { realGitHub } from "./github-client.js";
+import { realGitHubClient } from "./github-client.js";
 import { run } from "./run.js";
 
 async function main() {
   try {
     const context = getContext();
     const inputs = getInputs();
-    const client = realGitHub(inputs.token);
+    const client = realGitHubClient(inputs.token);
     run(context, inputs, client);
   } catch (error) {
     if (error instanceof Error) {

@@ -8,7 +8,7 @@ import { Inputs } from "./inputs.js";
 
 // `GitHub` encapsulates a mockable to GitHub. Use the same pattern for any
 // 3rd-party APIs.
-import { GitHub } from "./github-client.js";
+import { GitHubClient } from "./github-client.js";
 
 // The results of both are passed to a `run()`, allowing it to be easily
 // unit-tested by providing static values (see `run.test.ts`).
@@ -17,7 +17,7 @@ import { GitHub } from "./github-client.js";
 export async function run(
   context: Context,
   inputs: Inputs,
-  client: GitHub,
+  client: GitHubClient,
 ): Promise<void> {
   // Your logic here
   core.info(JSON.stringify(context));

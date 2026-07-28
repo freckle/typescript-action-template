@@ -5,7 +5,7 @@ export type PullRequest = {
   title: string;
 };
 
-export interface GitHub {
+export interface GitHubClient {
   getPullRequest: (
     owner: string,
     repo: string,
@@ -13,7 +13,7 @@ export interface GitHub {
   ) => Promise<PullRequest>;
 }
 
-export function realGitHub(token: string): GitHub {
+export function realGitHubClient(token: string): GitHubClient {
   const client = github.getOctokit(token);
 
   return {
