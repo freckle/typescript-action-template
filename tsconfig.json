@@ -1,10 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "outDir": "./lib",
     "rootDir": "./src",
+    "outDir": "./lib",
     "allowJs": true,
-    "ignoreDeprecations": "6.0",
-    "target": "es5",
+    "target": "ES2022",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -19,8 +19,7 @@
     "esModuleInterop": true,
     "strict": true,
     "isolatedModules": true,
-    "types": ["node"]
+    "types": ["node", "vitest/globals"]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["./src/**/*.test.ts"]
+  "include": ["./src/**/*"]
 }
