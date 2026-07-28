@@ -1,5 +1,4 @@
 import * as core from "@actions/core";
-import * as github from "@actions/github";
 
 import { getContext } from "./context.js";
 import { getInputs } from "./inputs.js";
