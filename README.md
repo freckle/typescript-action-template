@@ -2,13 +2,16 @@
 
 Our custom template repository for GitHub Actions implemented in TypeScript.
 
-[Creating a repository from a template][docs].
-(If you are working within Freckle, use [github-vending-machine](https://github.com/freckle/github-vending-machine) instead)
+See [creating a repository from a template][docs]. If you are working within
+Freckle, use [github-vending-machine][ghvm] instead.
 
 [docs]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+[ghvm]: https://github.com/freckle/github-vending-machine
 
-**NOTE**: Be sure to look for strings like "TODO" or "Action name" and update
-them accordingly.
+> [!WARNING]
+>
+> Be sure to look for strings like "TODO" or "Action name" and update them
+> accordingly.
 
 ## Usage
 
