@@ -9,6 +9,7 @@
     "format": "prettier --write \"**/*.ts\"",
     "format-check": "prettier --check \"**/*.ts\"",
     "test": "vitest run",
+    "lint": "eslint",
     "readme": "npx action-docs -u && prettier --write README.md"
   },
   "repository": {
@@ -24,17 +25,17 @@
   },
   "devDependencies": {
     "@actions/glob": "^0.7.0",
+    "@eslint/js": "^10.0.1",
     "@octokit/plugin-rest-endpoint-methods": "^17.0.0",
     "@octokit/types": "^16.0.0",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.13.3",
     "@vercel/ncc": "^0.44.1",
-    "jest": "^30.4.2",
+    "eslint": "^10.7.0",
     "jsdom": "^30.0.0",
     "prettier": "^3.9.6",
-    "ts-jest": "^29.4.12",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.5"
+    "typescript-eslint": "^8.65.0",
+    "vitest": "^4.1.10"
   }
 }
