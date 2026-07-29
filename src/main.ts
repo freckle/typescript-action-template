@@ -10,7 +10,7 @@ async function main() {
     const context = getContext();
     const inputs = getInputs();
     const client = realGitHubClient(inputs.token);
-    run(context, inputs, client);
+    await run(context, inputs, client);
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);
