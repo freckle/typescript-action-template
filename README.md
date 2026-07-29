@@ -58,8 +58,8 @@ To trigger a release (and update the `@v{major}` tag), merge a commit to `main`
 that follows [Conventional Commits][]. In short,
 
 - `fix:` to trigger a patch release,
-- `feat:` for minor, and
-- `feat!:` and major
+- `feat:` to trigger minor, or
+- `<type>!:` or add a `BREAKING CHANGE:` trailer to trigger major
 
 We don't enforce conventional commits generally (though you are free do so),
 it's only required if you want to trigger release.
