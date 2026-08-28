@@ -1,20 +1,20 @@
-import * as core from "@actions/core";
+import * as core from '@actions/core'
 
-import { getInputs } from "./inputs.js";
+import {getInputs} from './inputs.js'
 
-vi.mock(import("@actions/core"), () => {
+vi.mock(import('@actions/core'), () => {
   return {
-    getInput: vi.fn(() => "_token_"),
-  };
-});
+    getInput: vi.fn(() => '_token_')
+  }
+})
 
-describe("getInputs", () => {
-  it("reads the github-token input", () => {
-    const inputs = getInputs();
+describe('getInputs', () => {
+  it('reads the github-token input', () => {
+    const inputs = getInputs()
 
-    expect(core.getInput).toHaveBeenCalledWith("github-token", {
-      required: true,
-    });
-    expect(inputs).toEqual({ token: "_token_" });
-  });
-});
+    expect(core.getInput).toHaveBeenCalledWith('github-token', {
+      required: true
+    })
+    expect(inputs).toEqual({token: '_token_'})
+  })
+})
