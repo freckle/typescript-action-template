@@ -31,7 +31,7 @@ describe("run", () => {
         _repo: string,
         _pull_number: number,
       ): Promise<PullRequest> => {
-        return pullRequest;
+        return pullRequest as PullRequest;
       },
     };
 
