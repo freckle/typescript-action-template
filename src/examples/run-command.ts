@@ -1,6 +1,4 @@
-// Example: running a shell command from an Action, via @actions/exec.
-// Not part of this template's demo flow (see run.ts) -- a reference for
-// actions that need to shell out, e.g. to git or another CLI.
+// Example: shelling out via @actions/exec; not part of the demo flow in run.ts
 
 import * as exec from '@actions/exec'
 

@@ -1,6 +1,4 @@
-// Example: finding files by glob pattern from an Action, via @actions/glob.
-// Not part of this template's demo flow (see run.ts) -- a reference for
-// actions that need to enumerate files in the checked-out repo.
+// Example: globbing files via @actions/glob; not part of the demo flow in run.ts
 
 import * as glob from '@actions/glob'
 

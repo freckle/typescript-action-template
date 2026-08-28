@@ -2,9 +2,7 @@ import * as github from '@actions/github'
 import {RestEndpointMethodTypes} from '@octokit/plugin-rest-endpoint-methods'
 import {OctokitResponse} from '@octokit/types'
 
-// Derived from Octokit's own types instead of hand-rolled, so it stays
-// correct as the GitHub API's response shape changes -- the same pattern
-// freckle/github-repo-health uses for its GitHubRepository type.
+// Derived from Octokit's own types so it stays correct as the API shape changes
 export type PullRequest = RestEndpointMethodTypes['pulls']['get']['response']['data']
 
 export interface GitHubClient {
