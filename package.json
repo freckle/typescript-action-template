@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "description": "Action description",
-  "main": "lib/main.js",
   "scripts": {
     "build": "tsc -p tsconfig.build.json && ncc build lib/main.js --minify",
     "format": "prettier --write \"**/*.ts\"",
