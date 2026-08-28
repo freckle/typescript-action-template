@@ -46,6 +46,18 @@ minimal permissions required. These permissions may need to be manually set in
 certain scenarios, such as workflows triggered by Dependabot PRs, which use a
 read-only `GITHUB_TOKEN`.
 
+## Development
+
+- **Package manager**: pnpm (Node version pinned in `.nvmrc`)
+- `pnpm build` — `tsc` then `ncc`, bundles to `dist/index.js`
+- `pnpm test` — Vitest
+- `pnpm coverage` — Vitest with coverage, gated at 70% (`main.ts` excluded: thin wiring, covered by the `integration` CI job instead)
+- `pnpm typecheck` — `tsc --noEmit`, includes test files
+- `pnpm lint` — ESLint
+- `pnpm format` / `pnpm format-check` — Prettier
+- `pnpm knip` — unused files/dependencies/exports
+- CI runs all of the above on every PR, then runs the built action end to end in the `integration` job
+
 ## Versioning
 
 Versioned tags will exist, such as `v1.0.0` and `v2.1.1`. Tags will also exist
