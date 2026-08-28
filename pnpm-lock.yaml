@@ -11,16 +11,10 @@ importers:
       '@actions/core':
         specifier: ^3.0.1
         version: 3.0.1
-      '@actions/exec':
-        specifier: ^3.0.0
-        version: 3.0.0
       '@actions/github':
         specifier: ^9.1.1
         version: 9.1.1
     devDependencies:
-      '@actions/glob':
-        specifier: ^0.7.0
-        version: 0.7.0
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))
@@ -68,9 +62,6 @@ packages:
 
   '@actions/github@9.1.1':
     resolution: {integrity: sha512-tL5JbYOBZHc0ngEnCsaDcryUizIUIlQyIMwy1Wkx93H5HzbBJ7TbiPx2PnFjBwZW0Vh05JmfFZhecE6gglYegA==}
-
-  '@actions/glob@0.7.0':
-    resolution: {integrity: sha512-+7s3wM+cXapDLmLL1NVWHawqcJOZzXZy2df/VhNn8DnZtS/x83iTCKaUn9F0llur4h3CII0AilvKKH4CMPL8Gw==}
 
   '@actions/http-client@3.0.2':
     resolution: {integrity: sha512-JP38FYYpyqvUsz+Igqlc/JG6YO9PaKuvqjM3iGvaLqFnJ7TFmcLyy2IDrY0bI0qCQug8E9K+elv5ZNfw62ZJzA==}
@@ -1342,11 +1333,6 @@ snapshots:
       '@octokit/request': 10.0.15
       '@octokit/request-error': 7.1.1
       undici: 6.28.0
-
-  '@actions/glob@0.7.0':
-    dependencies:
-      '@actions/core': 3.0.1
-      minimatch: 10.2.6
 
   '@actions/http-client@3.0.2':
     dependencies:
