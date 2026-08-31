@@ -1,11 +1,11 @@
-import * as core from "@actions/core";
+import * as core from '@actions/core'
 
 export type Inputs = {
-  token: string;
-};
+  token: string
+}
 
 export function getInputs(): Inputs {
   return {
-    token: core.getInput("github-token", { required: true }),
-  };
+    token: core.getInput('github-token', {required: true})
+  }
 }

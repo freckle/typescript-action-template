@@ -1,44 +1,44 @@
-import * as core from "@actions/core";
+import * as core from '@actions/core'
 
-import { PullRequest } from "./github-client.js";
-import { run } from "./run.js";
+import {PullRequest} from './github-client.js'
+import {run} from './run.js'
 
-vi.mock(import("@actions/core"), () => {
+vi.mock(import('@actions/core'), () => {
   return {
-    info: vi.fn(),
-  };
-});
+    info: vi.fn()
+  }
+})
 
-describe("run", () => {
-  it("fetches the PR and logs details", async () => {
+describe('run', () => {
+  it('fetches the PR and logs details', async () => {
     const context = {
-      eventName: "pull_request",
-      owner: "freckle",
-      repo: "action-name",
-      pullRequestNumber: 42,
-    };
+      eventName: 'pull_request',
+      owner: 'freckle',
+      repo: 'action-name',
+      pullRequestNumber: 42
+    }
 
-    const inputs = { token: "_token_" };
+    const inputs = {token: '_token_'}
 
     const pullRequest = {
       number: 42,
-      title: "Awesome PR",
-    };
+      title: 'Awesome PR'
+    }
 
     const client = {
       getPullRequest: async (
         _owner: string,
         _repo: string,
-        _pull_number: number,
+        _pull_number: number
       ): Promise<PullRequest> => {
-        return pullRequest;
-      },
-    };
+        return pullRequest as PullRequest
+      }
+    }
 
-    await run(context, inputs, client);
+    await run(context, inputs, client)
 
-    expect(core.info).toHaveBeenCalledWith(JSON.stringify(context));
-    expect(core.info).toHaveBeenCalledWith(JSON.stringify(inputs));
-    expect(core.info).toHaveBeenCalledWith(JSON.stringify(pullRequest));
-  });
-});
+    expect(core.info).toHaveBeenCalledWith(JSON.stringify(context))
+    expect(core.info).toHaveBeenCalledWith(JSON.stringify(inputs))
+    expect(core.info).toHaveBeenCalledWith(JSON.stringify(pullRequest))
+  })
+})
