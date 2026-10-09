@@ -33,7 +33,9 @@ jobs:
   integration:
     needs: build
     runs-on: ubuntu-latest
-    permissions: {}
+    # Checkout needs it in internal and private repositories made from this template
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
