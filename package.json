@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/freckle/TODO-action.git"
   },
-  "author": "Freckle",
+  "author": "Renaissance Learning Inc",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^3.0.1",

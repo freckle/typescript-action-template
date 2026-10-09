@@ -1,6 +1,6 @@
 name: "Action name"
 description: "Action description"
-author: "Freckle"
+author: "Renaissance Learning Inc"
 inputs:
   github-token:
     description: "Override GitHub token, if necessary"
