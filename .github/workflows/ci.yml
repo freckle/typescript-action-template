@@ -33,7 +33,11 @@ jobs:
   integration:
     needs: build
     runs-on: ubuntu-latest
-    permissions: {}
+    # Checkout needs contents in internal and private repositories made from
+    # this template; the example action reads the pull request
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@v7
       - uses: actions/download-artifact@v8
